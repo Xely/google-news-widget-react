@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+.widget {
+    margin: 50px auto 0;
+    max-width: 400px;
+    font-family: Roboto, serif;
+    text-align: center;
+    border: 2px solid #353535;
+    border-radius: 2px;
+    background-color: #353535;
+}
+
+.image {
+    margin: 0 auto 8px;
+    display: block;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.from {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 5px;
+}
+.link, .from {
+    padding: 10px;
+}
