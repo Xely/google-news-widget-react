@@ -6,22 +6,12 @@ module.exports = {
         filename: 'index.js',
         libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
     },
-    resolve: {
-        extensions: ['', '.js', '.jsx']
-    },
     module: {
-        loaders: [
-            {
-                test: /\.jsx?$/,
-                loader: 'babel',
-                exclude: /node_modules/,
-                query: {
-                    cacheDirectory: true,
-                    presets: ['react', 'es2015']
-                }
-            }
-        ],
         rules: [
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            },
             {
                 test: /\.js$/,
                 include: path.resolve(__dirname, 'src'),
