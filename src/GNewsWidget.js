@@ -22,9 +22,8 @@ class GNewsWidget extends Component {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        this.setState({news: data});
         // Allows to get a news as soon as the app is loaded
-        this.setState({newsToDisplay: data['articles'][0]})
+        this.setState({news: data, newsToDisplay: data['articles'][0]});
       });
   }
 
