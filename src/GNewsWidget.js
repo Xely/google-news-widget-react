@@ -8,8 +8,8 @@ class GNewsWidget extends Component {
     };
 
     componentDidMount() {
-        const {country = 'us'} = this.props;
-        var url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=448fce7c3a0e49c686457f7dbc4ca63f`;
+        const {ApiKey, country = 'us'} = this.props;
+        var url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${ApiKey}`;
 
         this.loadNews(url);
     }
