@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import './GNewsWidget.css';
 
 class GNewsWidget extends Component {
-  state = {
-    news: null,
-    newsToDisplay: ''
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      news: null,
+      newsToDisplay: ''
+    };
+  }
 
   componentDidMount() {
     const {ApiKey, country = 'us'} = this.props;

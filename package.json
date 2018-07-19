@@ -1,6 +1,6 @@
 {
-  "name": "google-news-widget-tac",
-  "version": "0.0.1",
+  "name": "google-news-widget-tac-test",
+  "version": "0.0.2",
   "description": "Put a description here",
   "main": "build/index.js",
   "peerDependencies": {
@@ -21,6 +21,7 @@
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1"
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^1.0.0"
   }
 }
